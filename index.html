@@ -269,74 +269,94 @@
       </p>
     </div>
 
+    <style>
+      .sponsor-logos img {
+        width: 90px;               /* smaller and uniform */
+        height: 90px;
+        border-radius: 50%;        /* circular shape */
+        object-fit: contain;       /* keeps image aspect ratio */
+        background-color: white;   /* gives clean circle background */
+        padding: 10px;
+        transition: transform 0.3s ease;
+        mix-blend-mode: multiply;  /* fixes Ansys white square issue */
+      }
+      .sponsor-logos img:hover {
+        transform: scale(1.05);
+      }
+      .sponsor-logos div {
+        flex: 0 0 20%;             /* 5 per row for 9 sponsors */
+        max-width: 20%;
+        padding: 15px;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .sponsor-logos div {
+          flex: 0 0 33.33%;
+          max-width: 33.33%;
+        }
+      }
+    </style>
+
     <div class="sponsor-logos" style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
-      
-      <!-- 1 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+
+      <div>
         <a href="https://www.engsoc.uwaterloo.ca/">
-          <img src="https://www.engsoc.uwaterloo.ca/wp-content/uploads/2018/01/cropped-EngSoc_Square_Logo-300x300.png" alt="Waterloo Engineering" style="max-width: 70%; height: auto;">
+          <img src="https://www.engsoc.uwaterloo.ca/wp-content/uploads/2018/01/cropped-EngSoc_Square_Logo-300x300.png" alt="Waterloo Engineering">
         </a>
       </div>
 
-      <!-- 2 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://uwaterloo.ca/engineering-endowment-foundation/">
-          <img src="WEEF.png" alt="Weef" style="max-width: 70%; height: auto;">
+          <img src="WEEF.png" alt="WEEF">
         </a>
       </div>
 
-      <!-- 3 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://www.solidworks.com/product/solidworks-education-whats-new">
-          <img src="Solidworks.png" alt="SolidWorks" style="max-width: 70%; height: auto;">
+          <img src="Solidworks.png" alt="SolidWorks">
         </a>
       </div>
 
-      <!-- 4 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://education.altium.com/">
-          <img src="Altium.png" alt="Altium" style="max-width: 70%; height: auto;">
+          <img src="Altium.png" alt="Altium">
         </a>
       </div>
 
-      <!-- 5 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://www.kenesto.com/">
-          <img src="KENESTO.png" alt="Kenesto" style="max-width: 70%; height: auto;">
+          <img src="KENESTO.png" alt="Kenesto">
         </a>
       </div>
 
-      <!-- 6 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://protospacemfg.com/">
-          <img src="ProtoSpace.png" alt="ProtoSpace" style="max-width: 70%; height: auto;">
+          <img src="ProtoSpace.png" alt="ProtoSpace">
         </a>
       </div>
 
-      <!-- 7 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://www.ansys.com/academic/students/student-teams">
-          <img src="https://seeklogo.com/images/A/ansys-logo-6AAD25ECDE-seeklogo.com.png" alt="Ansys" style="max-width: 70%; height: auto;">
+          <img src="https://seeklogo.com/images/A/ansys-logo-6AAD25ECDE-seeklogo.com.png" alt="Ansys">
         </a>
       </div>
 
-      <!-- 8 -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://www.xpincorporated.com/">
-          <img src="XPILogo.png" alt="XPI" style="max-width: 70%; height: auto;">
+          <img src="XPILogo.png" alt="XPI">
         </a>
       </div>
 
-      <!-- 9  -->
-      <div style="flex: 0 0 33.33%; max-width: 33.33%; padding: 10px; text-align: center;">
+      <div>
         <a href="https://blackberry.qnx.com/en">
-          <img src="qnx_logo.jpg" alt="QNX" style="max-width: 70%; height: auto;">
+          <img src="QNX.png" alt="QNX">
         </a>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 <!-- Subteams Section -->
@@ -502,4 +522,5 @@
 
 </body>
 </html>
+
 
